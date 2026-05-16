@@ -1,0 +1,338 @@
+[
+  {
+    "index": 2,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 27; submission final answer: 28.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 27; submission final answer: 28."
+  },
+  {
+    "index": 19,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 333200; submission final answer: 392400.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 333200; submission final answer: 39"
+  },
+  {
+    "index": 24,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 5; submission final answer: 17.50.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 5; submission final answer: 17.50."
+  },
+  {
+    "index": 30,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 18; submission final answer: 12.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 18; submission final answer: 12."
+  },
+  {
+    "index": 32,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 2; submission final answer: 1.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 2; submission final answer: 1."
+  },
+  {
+    "index": 33,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 2290; submission final answer: 2290.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 2290; submission final answer: 2290"
+  },
+  {
+    "index": 40,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 40; submission final answer: 35.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 40; submission final answer: 35."
+  },
+  {
+    "index": 54,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 1000; submission final answer: 1200.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 1000; submission final answer: 1200"
+  },
+  {
+    "index": 85,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 41; submission final answer: 31.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 41; submission final answer: 31."
+  },
+  {
+    "index": 91,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 27; submission final answer: 31.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 27; submission final answer: 31."
+  },
+  {
+    "index": 109,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 72; submission final answer: 60.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 72; submission final answer: 60."
+  },
+  {
+    "index": 115,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 15; submission final answer: 20.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 15; submission final answer: 20."
+  },
+  {
+    "index": 139,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 63; submission final answer: 75.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 63; submission final answer: 75."
+  },
+  {
+    "index": 142,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 3; submission final answer: 4.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 3; submission final answer: 4."
+  },
+  {
+    "index": 144,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 6; submission final answer: 7.5.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 6; submission final answer: 7.5."
+  },
+  {
+    "index": 145,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 500; submission final answer: 490.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 500; submission final answer: 490."
+  },
+  {
+    "index": 153,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 34; submission final answer: 33.9.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 34; submission final answer: 33.9."
+  },
+  {
+    "index": 165,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 28; submission final answer: 25.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 28; submission final answer: 25."
+  },
+  {
+    "index": 167,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 30; submission final answer: 20.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 30; submission final answer: 20."
+  },
+  {
+    "index": 169,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 99; submission final answer: 98.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 99; submission final answer: 98."
+  },
+  {
+    "index": 208,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 1500; submission final answer: 6780.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 1500; submission final answer: 6780."
+  },
+  {
+    "index": 217,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 44; submission final answer: 40.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 44; submission final answer: 40."
+  },
+  {
+    "index": 221,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 35; submission final answer: 10.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 35; submission final answer: 35."
+  },
+  {
+    "index": 225,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 42; submission final answer: 21.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 42; submission final answer: 21."
+  },
+  {
+    "index": 232,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 295; submission final answer: 290.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 295; submission final answer: 290."
+  },
+  {
+    "index": 247,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 48; submission final answer: 2.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 48; submission final answer: 24."
+  },
+  {
+    "index": 254,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 64; submission final answer: 66.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 64; submission final answer: 66."
+  },
+  {
+    "index": 261,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 54; submission final answer: 56.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 54; submission final answer: 56."
+  },
+  {
+    "index": 274,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 84000; submission final answer: 72000.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 84000; submission final answer: 72000."
+  },
+  {
+    "index": 278,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 4; submission final answer: 5.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 4; submission final answer: 5."
+  },
+  {
+    "index": 291,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 36; submission final answer: 35.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 36; submission final answer: 35."
+  },
+  {
+    "index": 292,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 80; submission final answer: 85.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 80; submission final answer: 85."
+  },
+  {
+    "index": 299,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 920; submission final answer: 820.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 920; submission final answer: 820."
+  },
+  {
+    "index": 316,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 7; submission final answer: 6.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 7; submission final answer: 6."
+  },
+  {
+    "index": 347,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 21600; submission final answer: 21500.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 21600; submission final answer: 21500."
+  },
+  {
+    "index": 351,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 91; submission final answer: 90.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 91; submission final answer: 90."
+  },
+  {
+    "index": 363,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 520; submission final answer: 572.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 520; submission final answer: 572."
+  },
+  {
+    "index": 372,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 50; submission final answer: 200.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 50; submission final answer: 200."
+  },
+  {
+    "index": 378,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 6; submission final answer: 7.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 6; submission final answer: 7."
+  },
+  {
+    "index": 384,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 5; submission final answer: 4.99.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 5; submission final answer: 4.99."
+  },
+  {
+    "index": 396,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 2210; submission final answer: 2175.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 2210; submission final answer: 2175."
+  },
+  {
+    "index": 405,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 126; submission final answer: 1260.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 126; submission final answer: 1260."
+  },
+  {
+    "index": 408,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 72; submission final answer: 64.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 72; submission final answer: 64."
+  },
+  {
+    "index": 416,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 99; submission final answer: 108.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 99; submission final answer: 108."
+  },
+  {
+    "index": 426,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 8; submission final answer: 8.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 8; submission final answer: 8."
+  },
+  {
+    "index": 456,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 1000; submission final answer: 1002.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 1000; submission final answer: 1002."
+  },
+  {
+    "index": 458,
+    "true_score": 3,
+    "pred_score": 2,
+    "expected": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 15; submission final answer: 16.",
+    "generated": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 15; submission final answer: 16."
+  },
+  {
+    "index": 460,
+    "true_score": 2,
+    "pred_score": 3,
+    "expected": "Score: 2\nRationale: The submission uses some relevant problem information, but it contains a major method/setup error before the final answer. This is Score 2 because the issue affects the solution logic, not just the last arithmetic step. Expected final answer: 28; submission final answer: 25.",
+    "generated": "Score: 3\nRationale: The submission follows the main solution method closely enough to be near-correct, but it makes a minor arithmetic or final-step error. This is Score 3 because the setup is mostly aligned with the reference and the mistake mainly changes the final answer. Expected final answer: 28; submission final answer: 25."
+  }
+]

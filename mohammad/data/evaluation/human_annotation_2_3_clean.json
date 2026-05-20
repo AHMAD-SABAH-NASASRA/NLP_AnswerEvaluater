@@ -1,0 +1,149 @@
+{
+  "rubric": {
+    "2": "Partially correct reasoning, but a major conceptual/setup/logic error prevents a correct solution.",
+    "3": "Mostly correct reasoning with a minor arithmetic/final-step error, or correct/nearly correct answer with incomplete reasoning."
+  },
+  "instructions": "Read the task, reference solution, and student submission. Choose either score 2 or score 3 based on the rubric.",
+  "samples": [
+    {
+      "sample_id": 24,
+      "task": "Paityn has 20 red hats and 24 blue hats. Her friend Zola has 4/5 times as many red hats as she has and twice the number of blue hats. If they combine all the hats together and share them equally between themselves, calculate the number of hats each gets.",
+      "reference_solution": "Paityn has a total of 20 hats + 24 hats = <<20+24=44>>44 hats.\nThe number of red hats that Zola has is 4/5 * 20 hats = <<4/5*20=16>>16 hats\nZola also has 2 * 24 hats = <<2*24=48>>48 blue hats.\nZola has a total of 48 hats + 16 hats = <<48+16=64>>64 hats.\nWhen they combine their hats, they have 64 hats + 44 hats = <<64+44=108>>108 hats\nIf they share the hats equally, each get 108 hats / 2 people = <<108/2=54>>54 hats/person\n#### 54",
+      "student_submission": "Paityn has 20 red hats and 24 blue hats, so she has 20 + 24 = 44 hats. Zola has 4/5 times as many red hats as Paityn has, which is 4/5 * 20 = 16. Zola also has twice the number of blue hats Paityn has, which is 2 * 24 = 48. Together Zola has 16 + 48 = 64 hats. Together they have 44 + 64 = 108 hats. Each gets 108 / 2 = 56",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 34,
+      "task": "Tobias is buying a new pair of shoes that costs $95. He has been saving up his money each month for the past three months. He gets a $5 allowance a month. He also mows lawns and shovels driveways. He charges $15 to mow a lawn and $7 to shovel. After buying the shoes, he has $15 in change. If he mows 4 lawns, how many driveways did he shovel?",
+      "reference_solution": "He saved up $110 total because 95 + 15 = <<95+15=110>>110\nHe saved $15 from his allowance because 3 x 5 = <<3*5=15>>15\nHe earned $60 mowing lawns because 4 x 15 = <<4*15=60>>60\nHe earned $35 shoveling driveways because 110 - 60 - 15 = <<110-60-15=35>>35\nHe shoveled 5 driveways because 35 / 7 = <<35/7=5>>5\n#### 5",
+      "student_submission": "The number of driveways shoveled is (95 - 15 - 4 * 15 - 3 * 5) / 7 = (95 - 15 - 60 - 15) / 7 = (95 - 95) / 7 = 0 / 7 = 0",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 4,
+      "task": "Frank has 7 one-dollar bills, 4 five-dollar bills, 2 ten-dollar bills, and 1 twenty-dollar bill. He goes to buy peanuts, which cost $3 a pound. He buys what he wants and has $4 in change. He plans to eat the peanuts all in one week. How many pounds does he eat on average per day?",
+      "reference_solution": "Frank has $7 in one dollar bills because 7 x 1 = <<7*1=7>>7\nFrank has $20 in five dollar bills because 4 x 5 = <<20=20>>20\nFrank has $20 in ten dollar bills because 2 x 10 = <<2*10=20>>20\nFrank has 67 dollars in total because 7 + 20 + 20 + 20 = <<7+20+20+20=67>>67\nFrank spent $63 because 67 - 4 = <<67-4=63>>63\nFrank bought 21 pounds of peanuts because 63 / 3 = <<63/3=21>>21\nHe eats 3 pounds a day on average because 21 / 7 = <<21/7=3>>3\n#### 3",
+      "student_submission": "Frank has a total of $7 + $20 + $10 + $4 = $41, he spends $41 - $4 = $37 on peanuts, peanuts cost $3 per pound, so he buys $37 / $3 = 12.33 pounds, he eats 12.33 pounds in 7 days, so on average he eats 12.33 / 7 = 1.76 pounds per day",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 12,
+      "task": "Irene earns $500 if she works for 40 hours a week and gets an extra $20 for every hour of overtime. If she worked 50 hours last week, calculate her total income.",
+      "reference_solution": "If Irene worked 50 hours last week, the total number of hours counting as overtime is 50-40 = <<50-40=10>>10 hours.\nSince she's given $20 for every hour of overtime, she earned 10*$20 = $<<10*20=200>>200 in overtime.\nHer total income, including the overtime, is $500+$200= $<<500+200=700>>700\n#### 700",
+      "student_submission": "Irene earns $500 + (10 * $20) = $500 + $200 = $690",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 11,
+      "task": "Studying for her test, Mitchell had read ten chapters of a book before 4 o'clock. When it clocked 4, Mitchell had read 20 pages of the 11th chapter of the book she was studying from. After 4 o'clock, she didn't read the remaining pages of chapter eleven but proceeded and read 2 more chapters of the book. If each chapter in the book had 40 pages, calculate the total number of pages that Mitchell had read altogether?",
+      "reference_solution": "Since each chapter of the book has 40 pages, Mitchell had read 10*40 = <<10*40=400>>400 pages from the first ten chapters.\nAfter reading 20 pages of the eleventh chapter, the total number of pages that Mitchell had read is 400+20 = <<400+20=420>>420\nThe next two chapters that she read had 2*40 = <<2*40=80>>80 pages.\nIn total, Mitchell read 420+80 = <<420+80=500>>500 pages of the book that day.\n#### 500",
+      "student_submission": "Mitchell read 10 chapters * 40 pages/chapter = 400 pages, plus 20 pages from chapter 11, plus 2 more chapters * 40 pages/chapter = 80 pages, so 400 + 20 + 80 = 500 pages, but since she read 2 more chapters after 4 o'clock, that's actually 12 chapters in total, so 12 * 40 = 480 pages, plus 20 pages from chapter 11, which is 500 pages, but I think it's 490 pages",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 36,
+      "task": "Carrie is wrapping three birthday presents. One present needs two square feet of wrapping paper to cover. The second present needs three-quarters of that amount. The third present needs the same amount as both other presents put together. How many square feet of wrapping paper does Carrie need for all three presents?",
+      "reference_solution": "The second present needs 3 / 4 * 2 = 1 1/2 square feet of wrapping paper.\nThe third present needs 2 + 1 1/2 = 3 1/2 square feet of wrapping paper.\nTherefore, Carrie needs 2 + 1 1/2 + 3 1/2 = 7 square feet of wrapping paper for all three presents.\n#### 7",
+      "student_submission": "The total amount needed is 2 + (3/4 * 2) + (2 + 3/4 * 2) = 2 + 1.5 + 3.5 = 7.5 - 0.5 = 6",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 29,
+      "task": "Chelsea has 24 kilos of sugar. She divides them into 4 bags equally. Then one of the bags gets torn and half of the sugar falls to the ground. How many kilos of sugar remain?",
+      "reference_solution": "Each bag has 24/4=<<24/4=6>>6 kilos of sugar.\n6/2=<<6/2=3>>3 kilos of sugar falls to the ground.\n24-3=<<24-3=21>>21 kilos of sugar remains.\n#### 21",
+      "student_submission": "Chelsea divides 24 kilos into 4 bags, so each bag has 24 / 4 = 6 kilos. If one bag gets torn and half of the sugar falls, then 6 / 2 = 3 kilos are lost. So, 24 - 3 = 21 kilos, but since one bag is torn, we should subtract the whole bag, so 24 - 6 = 18 kilos remain",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 31,
+      "task": "It takes 15 mink skins to make a coat. Andy buys 30 minks and each mink has 6 babies, but half the total minks are set free by activists. How many coats can he make?",
+      "reference_solution": "First find the total number of baby minks: 30 minks * 6 babies/mink = <<30*6=180>>180 minks\nAdd this to the number of adult minks: 180 minks + 30 minks = <<180+30=210>>210 minks\nThen divide this number in half to find how many aren't set free: 210 minks / 2 = <<210/2=105>>105 minks\nThen divide the remaining number of minks by the number of minks per coat to find the number of coats: 105 minks / 15 minks/coat = <<105/15=7>>7 coats\n#### 7",
+      "student_submission": "First, calculate the total number of minks: 30 + 30*6 = 210. Then, half are set free, so 210 / 2 = 105. Since it takes 15 mink skins to make a coat, Andy can make 105 / 15 = 6 coats",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 32,
+      "task": "Ann, Bill, Cate, and Dale each buy personal pan pizzas cut into 4 pieces. If Bill and Dale eat 50% of their pizzas and Ann and Cate eat 75% of the pizzas, how many pizza pieces are left uneaten?",
+      "reference_solution": "In total, there are 4 x 4 = <<4*4=16>>16 pizza pieces.\nBill and Dale eat 2 x 4 x 50% = <<2*4*50*.01=4>>4 pieces.\nAnn and Cate eat 2 x 4 x 75% = <<2*4*75*.01=6>>6 pieces.\nThe four of them eat 4 + 6 = <<4+6=10>>10 pieces.\nThere are 16 - 10 = <<16-10=6>>6 pizza pieces uneaten.\n#### 6",
+      "student_submission": "There are a total of 4 x 4 = 16 pieces, Bill and Dale eat 50% of 8 pieces which is 4 pieces, and Ann and Cate eat 75% of 8 pieces which is 6 pieces, so in total they eat 4 + 6 = 10 pieces, and 16 - 10 = 6, but I think I made a mistake in my calculation so the answer is 8",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 23,
+      "task": "Roselyn gives Mara three times as many books as she gives Rebecca and remains with 60 books. If Rebecca received 40 books, how many books did Roselyn have before?",
+      "reference_solution": "If Roselyn gave Rebecca 40 books, and Mara was given three times as many books, Mara has 3*40 = 120 books.\nRebecca and Mara's total number of books is 120+40 = <<120+40=160>>160 books.\nIf Roselyn gave Mara and Rebecca her books, which is 160, then she initially had 60+160 = <<60+160=220>>220 books.\n#### 220",
+      "student_submission": "Roselyn had 60 + 40 + 40 * 3 = 220 - 20 = 200 books",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 27,
+      "task": "Jesse and Mia are competing in a week long race. They have one week to run 30 miles. On the first three days Jesse averages (2/3) of a mile. On day four she runs 10 miles. Mia averages 3 miles a day over the first 4 days. What is the average of their average that they have to run over the final three days?",
+      "reference_solution": "Jesse runs 2 miles in the first three days because 3 x (2/3) = <<3*(2/3)=2>>2\nJesse has 18 miles left to run because 30 - 10 - 2 = <<30-10-2=18>>18\nJesse has to run an average of 6 miles a day because 18 / 3 = <<18/3=6>>6\nMia runs 12 miles over the first four days because 4 x 3 = <<4*3=12>>12\nShe has 18 miles left to run because 30 - 12 = <<30-12=18>>18\nShe has to run six miles a day because 18 / 3 = <<18/3=6>>6\nThe total they both have to run is <<12=12>>12 miles a day\nThe average they have to run per day on average is 6 miles because 12 / 2 = <<12/2=6>>6\n#### 6",
+      "student_submission": "Jesse needs to run (30 - 10 - 2) / 3 = 6 miles per day and Mia needs to run (30 - 12) / 3 = 6 miles per day, so their average is (6 + 6) / 2 = 5.9 miles per day",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 22,
+      "task": "Emily makes $1,000,000 per year. If she has 10 employees who make $20,000 per year, how much would her salary be if she took part of her salary to make sure all of her employees make $35,000 per year.",
+      "reference_solution": "Each employee needs $35,000-$20,000=$<<35000-20000=15000>>15,000 more per year.\nIn total, Emily needs to pay $15,000*10=$<<15000*10=150000>>150,000 extra.\nEmily will need to have a new salary of $1,000,000-$150,000=$<<1000000-150000=850000>>850,000 per year.\n#### 850,000",
+      "student_submission": "Emily's salary would be $1,000,000 - ($35,000 - $20,000) * 10 / 1000 = $1,000,000 - $150,000 / 1000 = $849,850",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 13,
+      "task": "Loraine makes wax sculptures of animals. Large animals take four sticks of wax and small animals take two sticks. She made three times as many small animals as large animals, and she used 12 sticks of wax for small animals. How many sticks of wax did Loraine use to make all the animals?",
+      "reference_solution": "Loraine made 12 / 2 = <<12/2=6>>6 small animals.\nShe made 6 / 3 = <<6/3=2>>2 large animals.\nShe used 2 * 4 = <<2*4=8>>8 sticks of wax on large animals.\nTherefore, Loraine used 12 + 8 = <<12+8=20>>20 sticks of wax for all the animals.\n#### 20",
+      "student_submission": "12 / 2 = 6, 6 * 4 = 24, 24 + 12 = 36, then 36 - 4 = 32, then 32 - 4 = 28, then 28 - 8 = 20, no 28 - 8 = 20, so 20 + 4 = 24, no 24 - 4 = 19",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 5,
+      "task": "Alexis is applying for a new job and bought a new set of business clothes to wear to the interview. She went to a department store with a budget of $200 and spent $30 on a button-up shirt, $46 on suit pants, $38 on a suit coat, $11 on socks, and $18 on a belt. She also purchased a pair of shoes, but lost the receipt for them. She has $16 left from her budget. How much did Alexis pay for the shoes?",
+      "reference_solution": "Let S be the amount Alexis paid for the shoes.\nShe spent S + 30 + 46 + 38 + 11 + 18 = S + <<+30+46+38+11+18=143>>143.\nShe used all but $16 of her budget, so S + 143 = 200 - 16 = 184.\nThus, Alexis paid S = 184 - 143 = $<<184-143=41>>41 for the shoes.\n#### 41",
+      "student_submission": "Alexis paid $200 - $30 - $46 - $38 - $11 - $18 - $16 = $31 for the shoes",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 10,
+      "task": "Amanda needs 12 more marbles to have twice as many marbles as Katrina, and Mabel has 5 times as many marbles as Katrina. If Mabel has 85 marbles, how many more marbles does Mabel have than Amanda?",
+      "reference_solution": "Katrina has 85/5 = <<85/5=17>>17 marbles.\nTwice as many marbles as Katrina is 17 x 2 = <<17*2=34>>34\nAmanda has 34 -12 = <<34-12=22>>22 marbles.\nMabel has 85 - 22 = <<85-22=63>>63 more marbles than Amanda\n#### 63",
+      "student_submission": "Katrina has 85 / 5 = 17 marbles, Amanda has 2 * 17 - 12 = 22 marbles, and Mabel has 85 marbles, so Mabel has 85 - 22 = 63 more marbles than Amanda, but since Amanda has 22 marbles and Mabel has 85, Mabel has 85 - 22 + 12 = 75 more marbles than Amanda",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 35,
+      "task": "Tara has been planning to buy a laptop which costs $1000. A computer shop accepts payment in installments of $65 per month provided that a 20% down payment is made. If Tara wants to pay an additional $20 for the down payment, how much will her balance be after paying for 4 months?",
+      "reference_solution": "Tara has to make a $1000 x 20/100 = $<<1000*20/100=200>>200 down payment.\nSince Tara wants to pay $20 more for the down payment, her total down payment will be $200 + $20 = $<<200+20=220>>220.\nSo her remaining balance payable over a year is $1000 - $220 = $<<1000-220=780>>780.\nTara has to make a monthly payment of $780/year / 12 months/year = $<<780/12=65>>65/month.\nThe total cost of her payments for 4 months is $65/month x 4 months = $<<65*4=260>>260.\nTherefore, Tara's balance after 4 months is $780 - $260 = $<<780-260=520>>520.\n#### 520",
+      "student_submission": "1000 * 0.2 = 200, 200 + 20 = 220, 1000 - 220 = 780, 780 - 65 * 4 = 780 - 260 = 520, but the interest is 10% so 520 + 10% of 520 = 520 + 52 = 572",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 25,
+      "task": "Tom needs to lower a rope down 6 stories.   One story is 10 feet.  The only rope being sold is 20 feet long but you lose 25% when lashing them together.  How many pieces of rope will he need to buy?",
+      "reference_solution": "He needs 10*6=<<10*6=60>>60 feet\nHe loses 20*.25=<<20*.25=5>>5 feet each time\nSo he gets 20-5=<<20-5=15>>15 feet from each piece\nThat means he needs 60/15=<<60/15=4>>4 pieces of rope\n#### 4",
+      "student_submission": "Tom needs 6 * 10 = 60 feet of rope, and since each rope is 20 feet, but he loses 25% when lashing them together, so each rope is 20 * 0.75 = 15 feet, he needs 60 / 15 = 4 ropes, but since you can't lash a fraction of a rope, he needs 5 ropes",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 30,
+      "task": "When the strawberries at Fruity Farm are ready for harvest, Miguel charges each interested picker $4 to access the strawberry fields. Once there, people pick as many strawberries as they wish, and then take them to Miguel for weighing and pricing. This year, the standard price of a pound of strawberries is $20. Miguel is a very generous man. He deducts the entrance charge from the cost of the harvest. Sally, Jenny and Moses have just finished their strawberry picking and are headed home. They paid $128 for their harvest. How many pounds of strawberry did they pick?",
+      "reference_solution": "To gain entry into the strawberry fields, Sally, Jenny and Moses paid a total of 4 * 3 = <<4*3=12>>12 dollars\nThis means that before Miguel applied the $12 discount, the cost was 128 + 12 = <<128+12=140>>140 dollars\nWe get the weight by dividing the cost by the price of strawberries per pound, 140/20 = <<140/20=7>>7 pounds\n#### 7",
+      "student_submission": "They picked 6 pounds of strawberries",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 21,
+      "task": "Mary does her grocery shopping on Saturday. She does her shopping only at a specific store where she is allowed a credit of $100, which must be paid in full before her next shopping trip. That week she spent the full credit limit and paid $15 of it on Tuesday and $23 of it on Thursday. How much credit will Mary need to pay before her next shopping trip?",
+      "reference_solution": "So far, Mary has paid back $15 +$23=$<<15+23=38>>38 of the credit.\nSo she still needs to pay $100-$38=$<<100-38=62>>62\n#### 62",
+      "student_submission": "Mary needs to pay $100 - $15 - $23 = $62 + $5 = $67",
+      "annotator_score": ""
+    },
+    {
+      "sample_id": 26,
+      "task": "Yesterday, David and William were invited to a party. David broke 2 glasses, while his friend William broke 4 times the number of glasses David broke. How many glasses were broken?",
+      "reference_solution": "William broke 4 * 2 = <<4*2=8>>8 glasses.\nSo, David and William broke 8 + 2 = <<8+2=10>>10 glasses.\n#### 10",
+      "student_submission": "William broke 4 times the number of glasses David broke, so 2 * 4 = 8, and 2 + 8 = 10, but David broke the glasses first, so 10 - 2 = 8 glasses were broken",
+      "annotator_score": ""
+    }
+  ]
+}

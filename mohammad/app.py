@@ -1,19 +1,33 @@
 import json
 import re
 import random
+import sys
+from pathlib import Path
+
 import torch
 import streamlit as st
-
 from unsloth import FastLanguageModel
+ROOT = Path(__file__).resolve().parent
+sys.path.append(str(Path(__file__).resolve().parent))
 
-DATA_PATH = "/home/mohammad/.ssh/data/raw/synthetic_gsm8k_grading.jsonl"
-MODEL_PATH = "/home/mohammad/.ssh/models/finetuned_chat"
+from paths import RAW_DATA, FINETUNED_MODEL
+
+
+DATA_PATH = str(RAW_DATA)
+
+MODEL_OPTIONS = {
+    "Fine-tuned Qwen2.5-Math-7B": str(FINETUNED_MODEL),
+    "Base Qwen2.5-Math-7B": "unsloth/Qwen2.5-Math-7B-Instruct-bnb-4bit",
+    "Gemma_3_27B":"/home/mohammad/.ssh/mohammad/stage_2",
+}
+
 
 st.set_page_config(
     page_title="Math Answer Evaluator",
-    page_icon="🧠",
+    page_icon="",
     layout="wide",
 )
+
 
 RUBRIC = {
     "0": "Irrelevant or completely incorrect answer.",
@@ -25,24 +39,29 @@ RUBRIC = {
 
 
 @st.cache_resource
-def load_model():
+def load_model(model_path):
     model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=MODEL_PATH,
+        model_name=model_path,
         max_seq_length=2048,
         dtype=None,
         load_in_4bit=True,
     )
+
     FastLanguageModel.for_inference(model)
+
     return model, tokenizer
 
 
 @st.cache_data
 def load_questions():
     with open(DATA_PATH, "r", encoding="utf-8") as f:
-        return [json.loads(line) for line in f]
+        return [json.loads(line) for line in f if line.strip()]
 
 
 def extract_score(text):
+    if text is None:
+        return None
+
     patterns = [
         r"Score:\s*([0-4])",
         r"score:\s*([0-4])",
@@ -56,6 +75,7 @@ def extract_score(text):
 
     for p in patterns:
         m = re.search(p, text, re.IGNORECASE)
+
         if m:
             return int(m.group(1))
 
@@ -63,9 +83,20 @@ def extract_score(text):
 
 
 def build_prompt(tokenizer, task, reference, student_answer):
-    rubric_text = "\n".join([f"{k}: {v}" for k, v in RUBRIC.items()])
+    rubric_text = "\n".join(
+        [f"Score {k}: {v}" for k, v in RUBRIC.items()]
+    )
 
-    user_prompt = f"""Evaluate the student's math answer.
+    user_prompt = f"""You are a strict math-answer evaluator.
+
+Evaluate the student's answer using the rubric.
+
+Important distinction:
+- Score 2: The answer has some relevant reasoning, but contains a major conceptual error, wrong setup, wrong operation, or broken logic.
+- Score 3:
+The submission is close to correct overall. This may happen in TWO cases:
+1. The method is mostly correct but contains a minor arithmetic or final-step mistake.
+2. The final answer is correct or nearly correct, but the reasoning/explanation is incomplete, weak, or insufficiently justified.
 
 Return ONLY this format:
 Score: <0-4>
@@ -85,7 +116,10 @@ Rubric:
 """
 
     messages = [
-        {"role": "user", "content": user_prompt}
+        {
+            "role": "user",
+            "content": user_prompt,
+        }
     ]
 
     return tokenizer.apply_chat_template(
@@ -96,7 +130,12 @@ Rubric:
 
 
 def evaluate_answer(model, tokenizer, task, reference, student_answer):
-    prompt = build_prompt(tokenizer, task, reference, student_answer)
+    prompt = build_prompt(
+        tokenizer=tokenizer,
+        task=task,
+        reference=reference,
+        student_answer=student_answer,
+    )
 
     inputs = tokenizer(
         prompt,
@@ -111,38 +150,59 @@ def evaluate_answer(model, tokenizer, task, reference, student_answer):
             pad_token_id=tokenizer.eos_token_id,
         )
 
-    full_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    generated = tokenizer.decode(
+        outputs[0][inputs["input_ids"].shape[-1]:],
+        skip_special_tokens=True,
+    ).strip()
 
-    generated = full_text.split("[/INST]")[-1].strip()
     score = extract_score(generated)
 
     return score, generated
 
 
-st.title("🧠 Automatic Math Answer Evaluator")
-st.write("Fine-tuned LLM evaluator using LoRA + Unsloth.")
+st.title(" Automatic Math Answer Evaluator")
+st.write("Math-answer grading using Qwen2.5-Math with optional LoRA fine-tuning.")
+
+selected_model_name = st.sidebar.selectbox(
+    "Choose model",
+    list(MODEL_OPTIONS.keys()),
+)
+
+selected_model_path = MODEL_OPTIONS[selected_model_name]
+
+st.sidebar.write("Selected model:")
+st.sidebar.code(selected_model_name)
 
 questions = load_questions()
-model, tokenizer = load_model()
+
+model, tokenizer = load_model(selected_model_path)
+
 
 if "question" not in st.session_state:
     st.session_state.question = random.choice(questions)
+
+if "result" not in st.session_state:
+    st.session_state.result = None
 
 if st.button("Load Random Question"):
     st.session_state.question = random.choice(questions)
     st.session_state.student_answer = ""
     st.session_state.result = None
 
+
 sample = st.session_state.question
+
 
 st.subheader("Question")
 st.info(sample["task"])
+
 
 student_answer = st.text_area(
     "Write your answer:",
     key="student_answer",
     height=160,
 )
+
 
 col1, col2 = st.columns([1, 1])
 
@@ -152,11 +212,13 @@ with col1:
 with col2:
     show_reference = st.checkbox("Show reference solution")
 
+
 if evaluate_btn:
     if not student_answer.strip():
         st.warning("Please write an answer first.")
+
     else:
-        with st.spinner("Evaluating..."):
+        with st.spinner(f"Evaluating with {selected_model_name}..."):
             score, generated = evaluate_answer(
                 model=model,
                 tokenizer=tokenizer,
@@ -166,14 +228,19 @@ if evaluate_btn:
             )
 
         st.session_state.result = {
+            "model": selected_model_name,
             "score": score,
             "generated": generated,
         }
 
-if st.session_state.get("result"):
+
+if st.session_state.result:
     result = st.session_state.result
 
     st.subheader("Evaluation Result")
+
+    st.write("Model used:")
+    st.code(result["model"])
 
     score = result["score"]
 
@@ -185,8 +252,9 @@ if st.session_state.get("result"):
     st.text_area(
         "Model Output",
         value=result["generated"],
-        height=160,
+        height=180,
     )
+
 
 if show_reference:
     st.subheader("Reference Solution")

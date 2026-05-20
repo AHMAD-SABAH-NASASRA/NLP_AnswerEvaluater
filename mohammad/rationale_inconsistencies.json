@@ -1,160 +1,153 @@
 [
   {
-    "index": 16,
+    "index": 29,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+  },
+  {
+    "index": 32,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
   },
   {
-    "index": 27,
+    "index": 40,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
+  },
+  {
+    "index": 41,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+  },
+  {
+    "index": 44,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+  },
+  {
+    "index": 60,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 1200.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 1200."
+  },
+  {
+    "index": 64,
     "pred_score": 1,
     "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
     "true_score": 1,
-    "expected": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning."
+    "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
   },
   {
-    "index": 31,
+    "index": 69,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The submission is connected to the problem only superficially and follows the wrong mathematical path."
+  },
+  {
+    "index": 70,
     "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 46.",
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 10.",
     "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 46."
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 10."
   },
   {
-    "index": 45,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 6."
-  },
-  {
-    "index": 47,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 100.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 100."
-  },
-  {
-    "index": 48,
+    "index": 79,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
   },
   {
-    "index": 51,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 75.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 75."
-  },
-  {
-    "index": 53,
+    "index": 87,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
   },
   {
-    "index": 58,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
-  },
-  {
-    "index": 68,
+    "index": 88,
     "pred_score": 4,
     "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 520.",
     "true_score": 4,
     "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 520."
   },
   {
-    "index": 77,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 5.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 5."
+    "index": 91,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning."
   },
   {
-    "index": 88,
+    "index": 94,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 230.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 230."
+  },
+  {
+    "index": 99,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 54.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 54."
+  },
+  {
+    "index": 109,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 138.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 138."
+  },
+  {
+    "index": 118,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method to solve the problem and arrives at the expected final answer. The expected final answer is 800.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 800."
+  },
+  {
+    "index": 123,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
+  },
+  {
+    "index": 144,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
   },
   {
-    "index": 90,
+    "index": 149,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
   },
   {
-    "index": 95,
+    "index": 150,
     "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 1920.",
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 8.",
     "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 1920."
+    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 8."
   },
   {
-    "index": 98,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and makes the correct final calculation. The expected final answer is 216.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 216."
-  },
-  {
-    "index": 107,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 21.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission demonstrates correct reasoning and arrives at the expected value. The expected final answer is 21."
-  },
-  {
-    "index": 123,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The work is mathematically consistent with the reference solution and ends with the correct answer. The expected final answer is 50.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 50."
-  },
-  {
-    "index": 130,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly."
-  },
-  {
-    "index": 135,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 840.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 840."
-  },
-  {
-    "index": 136,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 6."
-  },
-  {
-    "index": 141,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 320.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 320."
-  },
-  {
-    "index": 143,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
-  },
-  {
-    "index": 152,
+    "index": 158,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
@@ -165,129 +158,80 @@
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
+    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
+  },
+  {
+    "index": 160,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
     "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
   },
   {
-    "index": 162,
+    "index": 161,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 6."
+  },
+  {
+    "index": 174,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 16.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 16."
+  },
+  {
+    "index": 178,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly."
+  },
+  {
+    "index": 185,
     "pred_score": 4,
     "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 768000.",
     "true_score": 4,
     "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 768000."
   },
   {
-    "index": 164,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 70.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission demonstrates correct reasoning and arrives at the expected value. The expected final answer is 70."
-  },
-  {
-    "index": 166,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 168,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
-  },
-  {
-    "index": 173,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 600.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 600."
-  },
-  {
-    "index": 174,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies the numbers incorrectly.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
-  },
-  {
-    "index": 177,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
-  },
-  {
-    "index": 179,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
-  },
-  {
-    "index": 180,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 182,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 1200.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 1200."
-  },
-  {
-    "index": 185,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 54.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 54."
-  },
-  {
-    "index": 189,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
-  },
-  {
-    "index": 191,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies the wrong mathematical operation.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
-  },
-  {
-    "index": 192,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 138.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 138."
-  },
-  {
-    "index": 194,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
-  },
-  {
-    "index": 201,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 207,
+    "index": 190,
     "pred_score": 4,
     "generated": "Score: 4\nRationale: The response uses the appropriate method to solve the problem and arrives at the expected final answer. The expected final answer is 27.",
     "true_score": 4,
     "expected": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 27."
   },
   {
-    "index": 212,
+    "index": 192,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
+  },
+  {
+    "index": 194,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 121.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 121."
+  },
+  {
+    "index": 196,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and makes the correct final calculation. The expected final answer is 216.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 216."
+  },
+  {
+    "index": 203,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+  },
+  {
+    "index": 206,
     "pred_score": 3,
     "generated": "Score: 3\nRationale: The submission follows the main solution method and uses an appropriate mathematical operation. However, the final answer is incomplete or weakly justified.",
     "true_score": 3,
@@ -295,255 +239,290 @@
   },
   {
     "index": 213,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+  },
+  {
+    "index": 222,
     "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 10.",
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 600.",
     "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 10."
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 600."
   },
   {
     "index": 223,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 16.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 16."
-  },
-  {
-    "index": 227,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 230,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method to solve the problem and arrives at the expected final answer. The expected final answer is 800.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 800."
-  },
-  {
-    "index": 237,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The submission is connected to the problem only superficially and follows the wrong mathematical path."
-  },
-  {
-    "index": 245,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
-  },
-  {
-    "index": 246,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 121.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 121."
-  },
-  {
-    "index": 257,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
-  },
-  {
-    "index": 259,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly."
-  },
-  {
-    "index": 265,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
-  },
-  {
-    "index": 271,
     "pred_score": 1,
     "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
     "true_score": 1,
     "expected": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning."
   },
   {
-    "index": 272,
+    "index": 226,
     "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 8.",
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 21.",
     "true_score": 4,
-    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 8."
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 21."
   },
   {
-    "index": 282,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 36.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 36."
-  },
-  {
-    "index": 284,
+    "index": 227,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
-    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
+    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
   },
   {
-    "index": 285,
+    "index": 237,
     "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 77.",
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 840.",
     "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 77."
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 840."
   },
   {
-    "index": 287,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+    "index": 238,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 320.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 320."
   },
   {
-    "index": 317,
+    "index": 240,
     "pred_score": 1,
     "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies the numbers incorrectly.",
     "true_score": 1,
     "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
   },
   {
-    "index": 319,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 6.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 6."
-  },
-  {
-    "index": 324,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
-  },
-  {
-    "index": 330,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 500.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 500."
-  },
-  {
-    "index": 332,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
-  },
-  {
-    "index": 333,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
-  },
-  {
-    "index": 339,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 10.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 10."
-  },
-  {
-    "index": 350,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 110.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 110."
-  },
-  {
-    "index": 355,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and makes the correct final calculation. The expected final answer is 45.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 45."
-  },
-  {
-    "index": 370,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
-  },
-  {
-    "index": 375,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6."
-  },
-  {
-    "index": 376,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 25.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The work is mathematically consistent with the reference solution and ends with the correct answer. The expected final answer is 25."
-  },
-  {
-    "index": 379,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 391,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 393,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 10.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The submission demonstrates correct reasoning and arrives at the expected value. The expected final answer is 10."
-  },
-  {
-    "index": 394,
-    "pred_score": 0,
-    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
-    "true_score": 0,
-    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
-  },
-  {
-    "index": 395,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The submission is connected to the problem only superficially and follows the wrong mathematical path."
-  },
-  {
-    "index": 402,
+    "index": 241,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
   },
   {
-    "index": 415,
+    "index": 242,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 1920.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 1920."
+  },
+  {
+    "index": 244,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+  },
+  {
+    "index": 248,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+  },
+  {
+    "index": 249,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+  },
+  {
+    "index": 262,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The work is mathematically consistent with the reference solution and ends with the correct answer. The expected final answer is 50.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 50."
+  },
+  {
+    "index": 273,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+  },
+  {
+    "index": 277,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 21.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission demonstrates correct reasoning and arrives at the expected value. The expected final answer is 21."
+  },
+  {
+    "index": 283,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 100.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 100."
+  },
+  {
+    "index": 285,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 75.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 75."
+  },
+  {
+    "index": 292,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies the wrong mathematical operation.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
+  },
+  {
+    "index": 296,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
+  },
+  {
+    "index": 298,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies them incorrectly."
+  },
+  {
+    "index": 304,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission gives a guess or unrelated statement and does not show usable mathematical reasoning."
+  },
+  {
+    "index": 312,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning."
+  },
+  {
+    "index": 313,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 77.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 77."
+  },
+  {
+    "index": 320,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 46.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 46."
+  },
+  {
+    "index": 324,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 6."
+  },
+  {
+    "index": 326,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 36.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 36."
+  },
+  {
+    "index": 328,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
   },
   {
-    "index": 418,
+    "index": 331,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
     "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+  },
+  {
+    "index": 365,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The answer shows minimal understanding by using problem numbers, but it applies the numbers incorrectly.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The submission uses some information from the problem, but the main operation or relationship is wrong."
+  },
+  {
+    "index": 367,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 6.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 6."
+  },
+  {
+    "index": 373,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
+  },
+  {
+    "index": 379,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 500.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution applies the correct mathematical process and reaches the expected final answer. The expected final answer is 500."
+  },
+  {
+    "index": 381,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
+  },
+  {
+    "index": 382,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
+  },
+  {
+    "index": 386,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 6."
+  },
+  {
+    "index": 391,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 10.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 10."
+  },
+  {
+    "index": 392,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 5.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 5."
+  },
+  {
+    "index": 403,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 110.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The solution is mathematically consistent with the reference and gives the correct result. The expected final answer is 110."
+  },
+  {
+    "index": 406,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 70.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission demonstrates correct reasoning and arrives at the expected value. The expected final answer is 70."
+  },
+  {
+    "index": 409,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and makes the correct final calculation. The expected final answer is 45.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The submission follows the correct reasoning and reaches the correct final answer. The expected final answer is 45."
   },
   {
     "index": 420,
@@ -553,38 +532,59 @@
     "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
   },
   {
-    "index": 423,
-    "pred_score": 1,
-    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
-    "true_score": 1,
-    "expected": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning."
+    "index": 425,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The answer does not establish the needed relationship from the problem, so it provides no valid solution path."
+  },
+  {
+    "index": 431,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6."
+  },
+  {
+    "index": 433,
+    "pred_score": 4,
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 25.",
+    "true_score": 4,
+    "expected": "Score: 4\nRationale: The work is mathematically consistent with the reference solution and ends with the correct answer. The expected final answer is 25."
   },
   {
     "index": 438,
     "pred_score": 0,
     "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
     "true_score": 0,
-    "expected": "Score: 0\nRationale: The response is essentially unsupported; it does not apply a relevant operation or explain how the result was obtained."
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
   },
   {
-    "index": 446,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 6.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 6."
+    "index": 450,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
   },
   {
     "index": 452,
     "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 230.",
+    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 10.",
     "true_score": 4,
-    "expected": "Score: 4\nRationale: The work correctly solves the problem and matches the reference answer. The expected final answer is 230."
+    "expected": "Score: 4\nRationale: The submission demonstrates correct reasoning and arrives at the expected value. The expected final answer is 10."
   },
   {
-    "index": 457,
-    "pred_score": 4,
-    "generated": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 21.",
-    "true_score": 4,
-    "expected": "Score: 4\nRationale: The response uses the appropriate method and arrives at the expected final answer. The expected final answer is 21."
+    "index": 453,
+    "pred_score": 0,
+    "generated": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way.",
+    "true_score": 0,
+    "expected": "Score: 0\nRationale: The submission fails to use the problem information in a meaningful mathematical way."
+  },
+  {
+    "index": 455,
+    "pred_score": 1,
+    "generated": "Score: 1\nRationale: The response attempts a calculation, but the chosen operation does not match the required reasoning.",
+    "true_score": 1,
+    "expected": "Score: 1\nRationale: The submission is connected to the problem only superficially and follows the wrong mathematical path."
   }
 ]

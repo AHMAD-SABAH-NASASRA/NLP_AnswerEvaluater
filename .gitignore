@@ -18,4 +18,10 @@ synthetic_gsm8k_grading.jsonl
 venv/
 
 __pycache__/
-.ipynb_checkpoints/
+.ipynb_checkpoints/cache/
+unsloth_compiled_cache/
+authorized_keys
+__pycache__/
+outputs/
+outputs_chat/
+outputs_qwen/

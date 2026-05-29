@@ -5,32 +5,39 @@
 This project investigates the use of instruction-tuned Large Language Models (LLMs) for automatic evaluation of student mathematical answers.
 
 Instead of solving mathematical problems directly, the system evaluates:
-- student reasoning,
-- partial correctness,
-- mathematical logic,
-- and final answers
 
-using a rubric-based grading system from **0 to 4**.
+* student reasoning,
+* partial correctness,
+* mathematical logic,
+* and final answers
+
+using a rubric-based grading system ranging from **0 to 4**.
 
 The project focuses on:
-- rubric-based grading,
-- rationale generation,
-- LoRA fine-tuning,
-- and evaluation consistency.
+
+* rubric-based grading,
+* rationale generation,
+* LoRA fine-tuning,
+* evaluation consistency,
+* and explanation quality.
 
 ---
 
 # Main Idea
 
 The model receives:
-- a math problem,
-- a reference solution,
-- a student submission,
-- and a grading rubric.
 
-The model then predicts:
-- a score from 0–4,
-- and a short rationale explaining the grade.
+* a math problem,
+* a reference solution,
+* a student submission,
+* and a grading rubric.
+
+The model predicts:
+
+* a score from 0–4,
+* and a short rationale explaining the assigned score.
+
+Unlike traditional math benchmarks that focus on solving problems, this project focuses on evaluating another person's solution.
 
 ---
 
@@ -53,7 +60,7 @@ LoRA Fine-Tuning
         ↓
 Evaluation Metrics
         ↓
-Error Analysis
+Consistency Analysis
         ↓
 Human Evaluation
         ↓
@@ -65,41 +72,48 @@ Streamlit Application
 # Models Used
 
 ## Base Models
-- Mistral-7B-Instruct
-- Qwen2.5-Math
-- Gemma-3-27B-IT
 
-## Fine-Tuning
-- LoRA
-- Unsloth
-- 4-bit Quantization
-- SFTTrainer
+* Mistral-7B-Instruct-v0.2
+* Qwen2.5-Math-7B-Instruct
+* Gemma-3-27B-IT
+
+## Fine-Tuning Framework
+
+* LoRA (Low-Rank Adaptation)
+* Unsloth
+* 4-bit Quantization
+* SFTTrainer
+* Hugging Face Transformers
+* PyTorch
 
 ---
 
 # Dataset
 
-The dataset was built synthetically using GSM8K-style arithmetic problems.
+The dataset was generated synthetically using GSM8K-style arithmetic reasoning problems.
 
 Each sample contains:
-- task
-- reference solution
-- student submission
-- rubric
-- score
-- rationale
+
+* task
+* reference solution
+* student submission
+* grading rubric
+* score
+* rationale
+
+The dataset was designed specifically for rubric-based answer evaluation rather than mathematical problem solving.
 
 ---
 
-# Rubric
+# Grading Rubric
 
-| Score | Meaning |
-|---|---|
-| 0 | Irrelevant or completely incorrect |
-| 1 | Wrong mathematical method |
-| 2 | Partially correct with major conceptual error |
-| 3 | Mostly correct with minor mistake |
-| 4 | Fully correct reasoning and final answer |
+| Score | Meaning                                                               |
+| ----- | --------------------------------------------------------------------- |
+| 0     | Irrelevant or completely incorrect                                    |
+| 1     | Uses numbers but applies incorrect logic or method                    |
+| 2     | Partially correct reasoning with a major conceptual error             |
+| 3     | Mostly correct method with a minor arithmetic or final-answer mistake |
+| 4     | Fully correct reasoning and final answer                              |
 
 ---
 
@@ -135,45 +149,89 @@ mohammad/
 
 # Evaluation Metrics
 
-The project uses:
-- Accuracy
-- MAE
-- QWK
-- ROUGE-L
-- BERTScore
-- Consistency Rate
+The project evaluates both grading performance and explanation quality.
+
+## Grading Metrics
+
+* Accuracy
+* Mean Absolute Error (MAE)
+* Quadratic Weighted Kappa (QWK)
+
+## Rationale Metrics
+
+* ROUGE-L
+* BERTScore
+
+## Consistency Metric
+
+* Score-Rationale Consistency Rate
+
+A rationale is considered consistent when its explanation logically supports the assigned score according to the grading rubric.
 
 ---
 
-# Main Results
+# Final Benchmark Results
 
-| Model | Accuracy | QWK |
-|---|---:|---:|
-| Base Mistral | 58.57% | 0.8507 |
-| Fine-Tuned Mistral | 86.33% | 0.9551 |
-| Fine-Tuned Qwen | 89.18% | 0.9721 |
-| Fine-Tuned Gemma-27B | 90.02% | 0.9744 |
+| Model                | Accuracy |    MAE |    QWK | BERTScore F1 | Consistency |
+| -------------------- | -------: | -----: | -----: | -----------: | ----------: |
+| Base Mistral         |   0.5857 | 0.4534 | 0.8507 |       0.8666 |      0.4762 |
+| Fine-tuned Mistral   |   0.8633 | 0.1453 | 0.9551 |       0.9632 |      0.8872 |
+| Base Qwen            |   0.0065 | 1.3333 | 0.3891 |       0.8184 |      0.0173 |
+| Fine-tuned Qwen      |   0.8918 | 0.1082 | 0.9721 |       0.9494 |      0.8182 |
+| Base Gemma-27B       |   0.7587 | 0.2565 | 0.9278 |       0.7602 |      0.7483 |
+| Fine-tuned Gemma-27B |   0.9002 | 0.0998 | 0.9744 |       0.9070 |      0.9065 |
 
 ---
 
 # Key Findings
 
-- Fine-tuning dramatically improved grading quality.
-- Most remaining errors occurred between scores 2 and 3.
-- Human evaluators also disagreed on borderline cases.
-- Strong score prediction does not always imply strong rationale quality.
+* Fine-tuning dramatically improved grading quality across all models.
+* Fine-tuned models consistently outperformed their base counterparts.
+* Most remaining classification errors occurred between Scores 2 and 3.
+* Human evaluators also showed disagreement on borderline cases.
+* Strong score prediction does not always imply strong rationale quality.
+* Fine-tuning significantly improved alignment between scores and explanations.
+
+The largest improvement was observed in score-rationale consistency. While some base models generated plausible explanations, they frequently assigned grades that did not match those explanations. Fine-tuning greatly improved both grading accuracy and explanation alignment.
+
+---
+
+# Rationale Evaluation
+
+The quality of generated rationales was evaluated separately from score prediction.
+
+ROUGE-L was used to measure lexical overlap between generated and reference rationales.
+
+BERTScore was used to measure semantic similarity between generated and reference rationales.
+
+Since multiple valid explanations may exist for the same grading decision, BERTScore is considered a more reliable measure of rationale quality.
+
+---
+
+# Human Evaluation
+
+A manual evaluation was conducted to inspect rationale quality and score-rationale alignment.
+
+Human review showed that:
+
+* Fine-tuned models produced clearer grading justifications.
+* Rationales were generally more rubric-aware after fine-tuning.
+* Borderline cases remained challenging even for human evaluators.
 
 ---
 
 # Streamlit Application
 
-The project includes an interactive Streamlit demo that allows users to:
-- choose questions,
-- submit student answers,
-- select models,
-- and receive automatic grading + rationales.
+The project includes an interactive Streamlit application that allows users to:
 
-Run:
+* select questions,
+* enter student submissions,
+* choose grading models,
+* compare base and fine-tuned models,
+* receive automatic scores,
+* and view generated rationales.
+
+Run the application:
 
 ```bash
 streamlit run app.py
@@ -191,25 +249,31 @@ pip install -r requirements.txt
 
 # Technologies
 
-- Python
-- PyTorch
-- Transformers
-- Unsloth
-- Streamlit
-- Scikit-learn
+* Python
+* PyTorch
+* Hugging Face Transformers
+* Unsloth
+* PEFT / LoRA
+* Streamlit
+* Scikit-learn
+* ROUGE
+* BERTScore
 
 ---
 
 # Future Work
 
-- Larger datasets
-- Human-annotated grading data
-- Better rationale evaluation
-- Multi-subject grading
-- Classroom deployment
+* Larger and more diverse datasets
+* Human-annotated grading data
+* More advanced rationale evaluation metrics
+* Multi-subject grading systems
+* Multi-turn feedback generation
+* Classroom deployment and real-world testing
 
 ---
 
 # Authors
 
 Mohammad Ismael
+
+An-Najah National University

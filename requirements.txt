@@ -1,0 +1,12 @@
+# Install a CUDA-compatible PyTorch build separately.
+streamlit>=1.40,<2
+transformers>=4.46,<5
+datasets>=3,<5
+peft>=0.13,<1
+trl>=0.12,<1
+accelerate>=1,<2
+bitsandbytes>=0.44,<1
+unsloth
+scikit-learn>=1.5,<2
+numpy>=1.26,<3
+bert-score>=0.3.13,<1

@@ -10,7 +10,7 @@ from unsloth import FastLanguageModel
 ROOT = Path(__file__).resolve().parent
 sys.path.append(str(Path(__file__).resolve().parent))
 
-from paths import RAW_DATA, FINETUNED_MODEL
+from paths import RAW_DATA, FINETUNED_MODEL, MODELS
 
 
 DATA_PATH = str(RAW_DATA)
@@ -18,7 +18,7 @@ DATA_PATH = str(RAW_DATA)
 MODEL_OPTIONS = {
     "Fine-tuned Qwen2.5-Math-7B": str(FINETUNED_MODEL),
     "Base Qwen2.5-Math-7B": "unsloth/Qwen2.5-Math-7B-Instruct-bnb-4bit",
-    "Gemma_3_27B":"/home/mohammad/.ssh/mohammad/stage_2",
+    "Gemma_3_27B": str(MODELS["stage2"]),
 }
 
 

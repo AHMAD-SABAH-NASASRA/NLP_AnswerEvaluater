@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -20,11 +21,15 @@ TRAIN_RAW = PROCESSED_DIR / "train_raw.jsonl"
 VAL_RAW = PROCESSED_DIR / "val_raw.jsonl"
 TEST_RAW = PROCESSED_DIR / "test_raw.jsonl"
 
-FINETUNED_MODEL = ROOT.parent / "outputs_qwen/checkpoint-800"
+def _env_path(name, default):
+    return Path(os.environ.get(name, default)).expanduser().resolve()
+
+
+FINETUNED_MODEL = _env_path("NLP_FINETUNED_MODEL", OUTPUTS_DIR / "checkpoint-800")
 MODELS = {
-    "qwen": ROOT.parent / "outputs_qwen/checkpoint-800",
-    "stage2": ROOT.parent / "/home/mohammad/.ssh/mohammad/stage_2",
-    "json": ROOT.parent / "models/finetuned_qwen_json",
+    "qwen": FINETUNED_MODEL,
+    "stage2": _env_path("NLP_STAGE2_MODEL", ROOT / "stage_2"),
+    "json": _env_path("NLP_JSON_MODEL", MODELS_DIR / "finetuned_qwen_json"),
 }
 BASE_QWEN_OUTPUT = EVALUATION_DIR / "eval_outputs_base_qwen.json"
 FINETUNED_OUTPUT = EVALUATION_DIR / "eval_outputs_qwen_math.json"

@@ -6,13 +6,14 @@ import sys
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
+from paths import TRAIN_CHAT, VAL_CHAT, OUTPUTS_DIR, MODELS_DIR, make_dirs
 MODEL_NAME = "unsloth/Qwen2.5-Math-7B-Instruct-bnb-4bit"
 
-TRAIN_PATH = "/home/mohammad/.ssh/mohammad/data/processed/train_chat.jsonl"
-VAL_PATH = "/home/mohammad/.ssh/mohammad/data/processed/val_chat.jsonl"
-
-OUTPUT_DIR = "/home/mohammad/.ssh/mohammad/outputs_qwen"
-SAVE_DIR = "/home/mohammad/.ssh/mohammad/models/finetuned_qwen"
+make_dirs()
+TRAIN_PATH = str(TRAIN_CHAT)
+VAL_PATH = str(VAL_CHAT)
+OUTPUT_DIR = str(OUTPUTS_DIR)
+SAVE_DIR = str(MODELS_DIR / "finetuned_qwen")
 
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name=MODEL_NAME,

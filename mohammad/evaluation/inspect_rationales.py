@@ -1,7 +1,12 @@
 import json
 import random
+import sys
+from pathlib import Path
 
-INPUT_PATH = "/home/mohammad/.ssh/data/evaluation/eval_outputs.json"
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from paths import MISTRAL_OUTPUT
+
+INPUT_PATH = MISTRAL_OUTPUT
 
 with open(INPUT_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)

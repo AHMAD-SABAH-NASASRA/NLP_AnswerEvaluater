@@ -1,15 +1,20 @@
 import json
 import re
+import sys
+from pathlib import Path
 
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, mean_absolute_error
 from unsloth import FastLanguageModel
 from transformers.utils import logging
 
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from paths import TEST_CHAT, BASE_MISTRAL_OUTPUT
+
 logging.set_verbosity_error()
 
-INPUT_PATH = "/home/mohammad/.ssh/data/processed/test_chat.jsonl"
-OUTPUT_PATH = "/home/mohammad/.ssh/data/evaluation/eval_outputs_base_mistral.json"
+INPUT_PATH = TEST_CHAT
+OUTPUT_PATH = BASE_MISTRAL_OUTPUT
 
 MODEL_NAME = "unsloth/mistral-7b-instruct-v0.2-bnb-4bit"
 

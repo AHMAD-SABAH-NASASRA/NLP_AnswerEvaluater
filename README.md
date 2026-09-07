@@ -26,7 +26,9 @@ The base-Qwen output has MAE 1.3333 and QWK 0.3891, but its stored accuracy fiel
 
 ## Run the demo
 
-Install a CUDA-compatible PyTorch build first; the 7B/27B 4-bit workflow has no supported CPU path.
+Use Python 3.12. Install a CUDA-compatible PyTorch build first; the 7B/27B 4-bit workflow has no supported CPU path.
+The fine-tuned adapter weights are external and are not committed to this repository;
+`NLP_FINETUNED_MODEL` must point to a compatible local checkpoint.
 
 ```bash
 python -m venv .venv

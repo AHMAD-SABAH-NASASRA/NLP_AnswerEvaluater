@@ -11,7 +11,7 @@ EVALUATION_DIR = DATA_DIR / "evaluation"
 MODELS_DIR = ROOT / "models"
 OUTPUTS_DIR = ROOT / "outputs_qwen"
 
-RAW_DATA = RAW_DIR / "synthetic_gsm8k_grading.jsonl"
+RAW_DATA = RAW_DIR / "synthetic_gsm8k_grading_enhanced.jsonl"
 
 TRAIN_CHAT = PROCESSED_DIR / "train_chat.jsonl"
 VAL_CHAT = PROCESSED_DIR / "val_chat.jsonl"
@@ -33,6 +33,8 @@ MODELS = {
 }
 BASE_QWEN_OUTPUT = EVALUATION_DIR / "eval_outputs_base_qwen.json"
 FINETUNED_OUTPUT = EVALUATION_DIR / "eval_outputs_qwen_math.json"
+BASE_MISTRAL_OUTPUT = EVALUATION_DIR / "eval_outputs_base_mistral.json"
+MISTRAL_OUTPUT = EVALUATION_DIR / "eval_outputs.json"
 RATIONALE_INCONSISTENCIES = EVALUATION_DIR / "rationale_inconsistencies.json"
 
 
